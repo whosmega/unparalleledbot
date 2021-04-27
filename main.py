@@ -27,8 +27,18 @@ class Bot(discord.Client):
             return
 
         if args[0] == "balance":
+            if len(args) == 2 and len(args[1]) >= 4:
+                id = args[1].strip("<").strip(">").strip("@").strip("!")
+
+                if id.isnumeric():
+                    member = getMember(self, message.guild.id, int(id))
+                    if not member:
+                        return
+                    await displayCash(self, member, message.channel)
+                    return
+
             await displayCash(self, message.author, message.channel)
-            giveCash(self, message.author, 100)
+            # giveCash(self, message.author, 100)
         elif args[0] == "leaderboard":
             await displayLeaderboard(self, message.channel)
         else:
