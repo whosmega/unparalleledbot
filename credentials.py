@@ -1,4 +1,4 @@
-token = "ODM0NzE0OTEyNjA0ODE1Mzcy.YIE61w.BRcFcTHUYCl8urIjs7NUNTFpNOQ"
+token = ""
 
 # Poll Message IDs
 
