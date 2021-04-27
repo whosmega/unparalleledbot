@@ -16,8 +16,20 @@ async def sendMessage(client, channel, title, message):
     await channel.send(embed=discord.Embed(
         title = title or "",
         description = message,
-        colour = discord.Colour.blue()
+        colour = discord.Colour.blurple()
     ))
+
+async def sendComplexMessage(client, title="", description=None, url=None, channel=None, image=None):
+    emb = discord.Embed(
+        title = title,
+        description = description,
+        colour = discord.Color.blurple(),
+    )
+
+    if image:
+        emb.set_image(url = image)
+    await channel.send(embed=emb)
+
 
 def getMember(client, guild_id, user_id):
 

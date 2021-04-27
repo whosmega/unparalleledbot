@@ -1,4 +1,9 @@
-token = ""
+token = "ODM0NzE0OTEyNjA0ODE1Mzcy.YIE61w.NmzeY_-YoxdAscMzpbwMK7hr130"
+reddit_appname = "unparalleledbot"
+reddit_appid = "Hga4o6EosyccuA"
+reddit_appsecret = "eW7rwXcs8HPJfJuKc_eAX2YmQE-8UQ"
+reddit_username = "WhosMega"
+reddit_password = "A1B2Tushar"
 
 # Poll Message IDs
 
